@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>memberinsert</title>
+<link href="memberinsert_boss.css" rel="stylesheet" type="text/css">
+</head>
+	
+<script language="javascript" src="js_package.js"></script>
+<script>
+function checkDuplicate() {
+    var id = document.forms["insert_boss"]["BId"].value;
+    if (id.trim() === "") {
+        alert("아이디를 입력하세요.");
+        return false;
+    } else {
+        window.open("bosscheckId.jsp?id="+id,"win", "width=255, height=145, scrollbars=no, resizable=no");
+    }
+}
+
+function checkEmpty() {
+    var inputs = document.forms["insert_boss"].getElementsByTagName("input");
+    var emptyFields = [];
+    for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].hasAttribute("required") && inputs[i].value.trim() === "") {
+            emptyFields.push(inputs[i].getAttribute("placeholder"));
+        }
+    }
+    if (emptyFields.length > 0) {
+        alert(emptyFields.join(", ") + "를 입력하세요.");
+        return false;
+    }
+    return true;
+}
+</script>
+
+<body>
+<div class="wrap">
+	<div class="board">
+	<div class="head">
+		<h1 align="center">사장님 회원가입</h1>
+	</div>
+	<div class="input">
+		<form name="insert_boss" action=memberinsert_bossResult.jsp method="post">
+		<table>
+			<tr>
+				<td>ID&nbsp;
+					<a href="javascript:checkDuplicate()">
+                                <input type="button" value="중복확인">
+                            </a>
+					<p><input type="text" name="BId" placeholder="아이디를 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>PASSWORD
+					<p><input type="password" name="BPasswd" placeholder="비밀번호를 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>대표자명
+					<p><input type="text" name="BName" placeholder="대표자명을 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>전화번호
+					<p><input type="text" name="BPhone" placeholder="전화번호를 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>이메일
+					<p><input type="text" name="BEmail" placeholder="이메일을 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>사업자 등록번호
+					<p><input type="text" name="BBusiness" placeholder="사업자 등록번호를 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>회사/점포명
+					<p><input type="text" name="BStore" placeholder="회사/점포명을 입력하세요" required></p>
+				</td>
+			</tr>
+			<tr>
+				<td>회사/점포 주소
+					<p><input type="text" name="BAddress" placeholder="주소를 입력하세요" required></p>
+				</td>
+			</tr>
+		</table>
+			<center><input type="submit" value="회원가입"><a href="index.html"><input type="button" value="취소" id="backbutton"></a></center>
+		</form>
+	</div>
+	</div>
+</div>
+</body>
+</html>

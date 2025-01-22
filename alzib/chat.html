@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>채팅</title>
+<link href="chat.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form name="chat" action="chat_save.jsp" method="post">
+<div class="wrap">
+	
+	<div class="border_wrap">
+	<div class="header_wrap">
+		<table>
+			<tr>
+				<td id="back"><a href="apply_resume.jsp">< </a></td>
+				<td id="name"><h3><%=Aname%></h3></td>
+			</tr>
+		</table>
+		
+	</div>
+		<div class="chat">
+		
+			<div class="date">2024-03-23</div>
+			<div class="chat_wrap">
+				<div class="left"><%=Achat%></div>
+				<div id="left_time"><span><%=Adate%></span></div>
+				<div class="right"><%=Bchat%></div>
+				<div id="right_time"><span><%=Bdate%> &nbsp;</span></div>
+			</div>
+			
+		</div>
+		
+		<div class="send">
+			<table>
+				<tr>
+					<td>
+						<input type="text" placeholder="메세지를 입력하세요">
+					</td>
+					<td id="send">
+						<input type="submit" value="전송">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>	
+</div>
+</body>
+</html>

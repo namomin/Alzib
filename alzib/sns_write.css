@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+/*
+table thead{
+	border-bottom: 1px solid #87AFE5; 
+}
+*/
+
+h2{
+	color:#2267C4;
+	padding: 10px 0px 30px 0px;
+}
+
+select{
+	width: 30%;
+  	padding: 8px;
+  	margin-top: 5px;
+  	margin-bottom: 10px;
+  	display: inline-block;
+  	box-sizing: border-box;
+  	border: 0px solid transparent;
+  	border-bottom: 2px solid #87AFE5;
+	font-size: 15px;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+select[name="Category"] option[value="choice"] {
+    display: none;
+  }
+
+
+input[type="text"]{
+	/*background-color: #D3D3D3;*/
+	width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 2px solid #87AFE5;
+    box-sizing: border-box;
+    border-radius: 5px;
+	font-size:15px;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+textarea{
+	width: 100%;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+	border: 2px solid #87AFE5;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+input[type="submit"]{
+	background-color: #2267C4;
+	color: #fff;
+	width: 150px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+ 	margin-top: 10px;	
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'GmarketSansMedium', sans-serif;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+}
+
+input[type="button"]{
+	background-color: #fff;
+	color: #87AFE5;
+	width: 150px;
+	padding: 9px 10px;
+	border: 1px solid #87AFE5;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: bold;	
+	font-family: 'GmarketSansMedium', sans-serif;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+}
+/*
+input[type="file"]{
+	color: #255DA8;
+	padding: 9px 10px;
+	border-bottom: 1px solid #87AFE5;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: bold;	
+}
+*/
+
+#fileinput{
+	font-family: 'GmarketSansMedium', sans-serif;
+	display: none;
+}
+
+#custom_fileinput{
+	background-image: url('images/imageupload_icon.png');
+	background-size: cover;
+	width: 33px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	color: #87AFE5;
+	border-right: 1px solid #87AFE5;
+}
+
+#filename {
+	margin-left: 10px;
+	color: #2267C4;
+	vertical-align: middle; /* 텍스트 세로 중앙 정렬 */
+	border-bottom-color: #2267C4;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.background{
+	width: 700px;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #87AFE5;
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.3);
+}
+
+.bottom{
+	margin-top: 30px;	
+}
+

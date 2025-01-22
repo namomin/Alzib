@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>필터</title>
+<link href="fillter.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="filter-container">
+		<hr>
+		<h2><font color="#689ADE">검색 조건 설정</font></h2>
+		<hr>
+        <div class="filter-item" align="left">
+            <label for="area">근무 지역 :</label>
+            <select id="area">
+				<option value="chungnam">충남</option>
+            </select>
+			<select>
+				<option value="chungnam_s">천안시 서북구</option>
+            </select>
+			<select>
+				<option value="">동, 읍, 면</option>
+				<option value="">두정동</option>
+				<option value="">백석동</option>
+				<option value="">부대동</option>
+				<option value="">불당동</option>
+				<option value="">성거읍</option>
+				<option value="">성성동</option>
+				<option value="">성정동</option>
+				<option value="">성환읍</option>
+				<option value="">신당동</option>
+				<option value="">쌍용동</option>
+				<option value="">업성동</option>
+				<option value="">와촌동</option>
+				<option value="">입장면</option>
+				<option value="">직산읍</option>
+				<option value="">차암동</option>
+            </select>
+        </div>
+		
+		 <div class="filter-item" align="left">
+            <label for="type">업직종 :</label>
+            <select id="type">
+				<option value="stype">업직종</option>
+                <option value="drink">외식/음료</option>
+				<option value="sell">매장 관리/판매</option>
+				<option value="ser">서비스</option>
+				<option value="paper">사무직</option>
+				<option value="talk">고객 상담/리서치/영업</option>
+				<option value="it">IT/기술</option>
+				<option value="design">디자인</option>
+				<option value="media">미디어</option>
+				<option value="deli">운전/배달</option>
+				<option value="edu">교육/강사</option>
+            </select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="period ">근무 시간 :</label>
+            <select id="period ">				
+				<option value="wtime" selected>시작 시간</option>
+				<option value="wtime">시간 협의</option>
+				<option value="wtime">1시</option>
+				<option value="wtime">2시</option>
+				<option value="wtime">3시</option>
+				<option value="wtime">4시</option>
+				<option value="wtime">5시</option>
+				<option value="wtime">6시</option>
+				<option value="wtime">7시</option>
+				<option value="wtime">8시</option>
+				<option value="wtime">9시</option>
+				<option value="wtime">10시</option>
+				<option value="wtime">11시</option>
+				<option value="wtime">12시</option>
+				<option value="wtime">13시</option>
+				<option value="wtime">14시</option>
+				<option value="wtime">15시</option>
+				<option value="wtime">16시</option>
+				<option value="wtime">17시</option>
+				<option value="wtime">18시</option>
+				<option value="wtime">19시</option>
+				<option value="wtime">20시</option>
+				<option value="wtime">21시</option>
+				<option value="wtime">22시</option>
+				<option value="wtime">23시</option>
+				<option value="wtime">24시</option>
+			</select>&nbsp;
+					-
+			&nbsp;<select>
+				<option value="wtime" selected>종료 시간</option>
+				<option value="wtime">시간 협의</option>
+				<option value="wtime">1시</option>
+				<option value="wtime">2시</option>
+				<option value="wtime">3시</option>
+				<option value="wtime">4시</option>
+				<option value="wtime">5시</option>
+				<option value="wtime">6시</option>
+				<option value="wtime">7시</option>
+				<option value="wtime">8시</option>
+				<option value="wtime">9시</option>
+				<option value="wtime">10시</option>
+				<option value="wtime">11시</option>
+				<option value="wtime">12시</option>
+				<option value="wtime">13시</option>
+				<option value="wtime">14시</option>
+				<option value="wtime">15시</option>
+				<option value="wtime">16시</option>
+				<option value="wtime">17시</option>
+				<option value="wtime">18시</option>
+				<option value="wtime">19시</option>
+				<option value="wtime">20시</option>
+				<option value="wtime">21시</option>
+				<option value="wtime">22시</option>
+				<option value="wtime">23시</option>
+				<option value="wtime">24시</option>					
+			</select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="day">근무 요일 :</label>
+            <select id="day">
+				<option value="sday">근무 요일</option>
+				<option value="m-s">월~일</option>
+				<option value="m-s">월~토</option>
+				<option value="m-f">월~금</option>
+				<option value="weekend">주말 (토,일)</option>
+				<option value="6d">주6일</option>
+				<option value="5d">주5일</option>
+				<option value="4d">주5일</option>
+				<option value="3d">주3일</option>
+				<option value="2d">주2일</option>
+				<option value="1d">주1일</option>
+				<option value="dep">협의 제외</option>
+            </select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="time">근무 기간 :</label>
+            <select id="time">
+				<option>근무 기간</option>
+				<option>하루</option>
+                <option>1주일 이하</option>
+				<option>1주일~1개월</option>
+				<option>1개월~3개월</option>
+				<option>3개월~6개월</option>
+				<option>6개월~1년</option>
+				<option>1년 이상</option>
+				<option>협의 가능</option>
+            </select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="sex">성별 :</label>
+            <select id="sex">
+				<option value="ssex">성별</option>
+                <option value="female">여자</option>
+				<option value="male">남자</option>
+				<option value="sep">무관 제외</option>
+            </select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="age">연령 :</label>
+    		<select id="age"></select>
+        </div>
+		
+		<div class="filter-item" align="left">
+            <label for="htype">고용 형태 :</label>
+            <select id="htype">
+				<option value="shtype">고용 형태</option>
+                <option value="part">알바</option>
+				<option value="reg">정규직</option>
+				<option value="cont">계약직</option>
+				<option value="dis">파견직</option>
+				<option value="intern">인턴</option>
+				<option value="free">프리랜서</option>
+				<option value="tra">연수생/교육생</option>
+            </select>
+        </div>
+        <button onclick="applyFilters()" id="in">적용</button>
+	</div>
+</body>
+<script>
+        // 10세부터 80까지 나오는 코드
+        var ageSelect = document.getElementById('age');
+
+        for (var i = 10; i <= 80; i++) {
+            var option = document.createElement('option');
+            option.value = i;
+            option.text = i + '세';
+            ageSelect.add(option);
+        }
+ </script>
+</html>

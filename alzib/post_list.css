@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.postlist a{
+	text-decoration: none;
+	color: black;
+}
+
+.postlist a:hover{
+	color: #CADCF4;
+}
+
+.menubutton{
+	text-align: right;
+	margin-top: 25px;
+}
+
+#list_header{
+	border:none;
+}
+
+#list{
+	border:none;
+	color:#0047A9;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#button{
+	border:none;
+}
+
+/*리스트 테이블 크기 고정*/
+.border_wrap{
+	width: 1350px;
+}
+
+.border_wrap table{
+	width: 100%;
+	text-align: center;
+	border-spacing: 0;
+	border-top: 2px solid #689ADE;
+	border-bottom: 1px solid #689ADE;
+}
+
+.border_wrap th{
+	border-bottom: 2px solid #689ADE;
+	padding: 20px;
+	color: #0047A9;
+}
+
+.border_wrap td{
+	border-bottom: 1px solid #689ADE;
+	padding: 20px;
+}
+
+.page{
+	margin-bottom: 35px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.page span{
+	font-size: 17px;
+	
+}
+
+#present{
+	color:#0047A9;
+	font-weight:bold;
+}
+
+#pagenumber a:hover{
+	color: #CADCF4;
+}
+
+@media screen and (max-width: 768px){
+	
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px){
+
+}

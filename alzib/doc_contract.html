@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>doc_contract</title>
+<link href="doc_contract.css" rel="stylesheet" type="text/css">
+<style>
+    .category table td.selected:hover {
+    	cursor: pointer;
+    	color: white;
+    	background-color: #CADCF4;
+	}
+	
+	.down a{
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		border: 1px solid #689ADE;
+		border-radius: 7px;
+		background-color: #689ADE;
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	}
+	
+	.down a:hover{
+		color: #CADCF4;
+	}
+	.nav{
+			text-align: left;
+			margin-left: 15%;
+			width: 20%;
+			border-radius: 10px;
+			border: 1px solid #689ADE;
+			padding: 15px;
+			color: #689ADE;
+			margin-bottom: 15px;
+		}
+
+		a{
+			color: #689ADE;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color:#CADCF4;
+		}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="nav">
+		<span>편의기능 > <a href="doc_contract.html">문서양식</a></span>
+</div>
+    <div class="border_wrap">
+        
+        <div class="heder_wrap">
+            <table>
+                <tr>
+                    <td id="choice"><a href="doc_contract.html"><h3>표준근로계약서</h3></a></td>
+                    <td><a href="doc_resume.html"><h3>이력서</h3></a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="category">
+            <table>
+                <tr>
+                    <td onclick="showImage('limit')" id="limitTD">
+                        기간의 정함이 있는경우
+                    </td>
+                    <td onclick="showImage('unlimited')" id="unlimitedTD">
+                        기간의 정함이 없는경우
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="showImage('short')" id="shortTD">
+                        단시간근로자
+                    </td>
+                    <td onclick="showImage('minor')" id="minorTD">
+                        연소근로자
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="doc">
+            <div class="down" id="downloadLink">
+                <!-- 파일 이름을 동적으로 설정하는 부분 초기에는 빈 링크로 설정-->
+                <a id="downloadAnchor" href="" download>다운로드</a>
+            </div>
+            <br><br>
+            <div class="paper" id="paperContent">
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        showImage('limit');
+    }
+function showImage(type) {
+    var paperContent = document.getElementById("paperContent");
+    var imgSrc;
+    var imgAlt;
+
+    // 모든 td에서 선택된 스타일 제거
+    var tds = document.querySelectorAll('.category table td');
+    tds.forEach(function(td) {
+        td.classList.remove('selected');
+    });
+
+    switch (type) {
+        case 'limit':
+            imgSrc = "images/limit.jpg";
+            imgAlt = "표준근로계약서_기간의정함이있는경우";
+            var limitTD = document.getElementById('limitTD');
+            limitTD.classList.add('selected');
+            limitTD.classList.add('hovered');
+            break;
+        case 'unlimited':
+            imgSrc = "images/long.jpg";
+            imgAlt = "표준근로계약서_기간의정함이없는경우";
+            var unlimitedTD = document.getElementById('unlimitedTD');
+            unlimitedTD.classList.add('selected');
+            unlimitedTD.classList.add('hovered');
+            break;
+        case 'short':
+            imgSrc = "images/short.jpg";
+            imgAlt = "표준근로계약서_단기근무";
+            var shortTD = document.getElementById('shortTD');
+            shortTD.classList.add('selected');
+            shortTD.classList.add('hovered');
+            break;
+        case 'minor':
+            imgSrc = "images/minor.jpg";
+            imgAlt = "표준근로계약서_연소자";
+            var minorTD = document.getElementById('minorTD');
+            minorTD.classList.add('selected');
+            minorTD.classList.add('hovered');
+            break;
+        default:
+
+            break;
+    }
+
+    paperContent.innerHTML = `<img src="${imgSrc}" alt="${imgAlt}" width="60%">`;
+
+    var downloadAnchor = document.getElementById("downloadAnchor");
+    var fileName;
+
+    switch (type) {
+        case 'limit':
+            fileName = "표준근로계약서_기간정함있는경우.hwp";
+            break;
+        case 'unlimited':
+            fileName = "표준근로계약서_기간정함없는경우.hwp";
+            break;
+        case 'short':
+            fileName = "표준근로계약서_단시간.hwp";
+            break;
+        case 'minor':
+            fileName = "표준근로계약서_연소근로자.hwp";
+            break;
+        default:
+
+            break;
+    }
+
+    downloadAnchor.href = "images/" + fileName;
+    downloadAnchor.innerHTML = fileName + " 다운";
+}
+
+</script>
+
+</body>
+</html>

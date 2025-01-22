@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 100px auto;	
+}
+
+.wrap2{
+	padding: 30px;
+}
+
+h2{
+	text-align: center;
+	color: #083A7E;
+}
+
+.table_wrap{
+	background-color: white;
+	width: 100%;
+	margin-top: 30px;
+}
+
+h3{
+	margin: 5px 0px 5px 0px;
+}
+
+.date{
+	font-size: 13px;
+	color: gray;
+}
+
+table{
+	border-collapse: collapse;
+	width: 95%;
+}
+
+table th{
+	background-color: white;
+	text-align: center;
+	padding: 5px;
+	border-bottom: 2px solid #689ADE;
+	border-top: 2px solid #689ADE;
+}
+
+table th a{
+    text-decoration: none;
+	color: black;
+    display: block;
+    padding: 5px;
+    margin: 5px 0;
+    transition: color 0.3s, font-size 0.3s;
+	transition: letter-spacing 0.3s ease;
+}
+
+table th a:hover {
+	color: #0E448F;
+	font-size: 110%;
+	letter-spacing: 2px;
+}
+
+.detailview{
+	width: auto;
+	background-color: white;
+	padding: 8px;
+}
+
+.detailview table{
+	border-bottom: 1px solid #689ADE;
+	
+}
+
+.detailview td{
+	padding: 5px 0px 5px 20px;
+	
+}
+
+#date{
+	font-size:13px;
+	color: gray;
+}
+
+#font{
+	padding-right: 15px;
+	text-align: right;
+	font-size:15px;
+	color: gray;
+}
+
+.detailview a{
+	color:black;
+	text-decoration: none;
+}
+
+.detailview a:hover{
+	color: #5475A2;
+}
+
+input[type="button"]{
+	background-color: #fff;
+	color: #87AFE5;
+	width: 150px;
+	padding: 9px 10px;
+	border: 1px solid #87AFE5;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: bold;	
+	font-family: 'GmarketSansMedium', sans-serif;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+}
+
+/*모바일*/
+@media screen and (max-width: 768px){
+	.table_wrap{
+		background-color: white;
+		width: 50%;
+		margin-top: 30px;
+		justify-content: center;
+	}
+}
+
+/*태블릿*/
+@media screen and (min-width: 769px) and (max-width: 959px){
+	.table_wrap{
+		background-color: white;
+		width: 60%;
+		margin-top: 30px;
+		justify-content: center;
+	}
+}

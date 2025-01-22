@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0;
+}
+
+header{
+	display: flex;
+	align-items: flex-end;
+}
+
+header img{
+	width: 200px;
+	height: auto;
+	margin: 20px;
+}
+
+#logo{
+	margin:0;
+}
+
+header span{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+#logout{
+	text-decoration: none;
+	color: #689ADE;
+	font-size: 19px;
+	border: 2px solid #689ADE;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+	padding: 5px;
+}
+
+#logout:hover{
+	color: white;
+	background-color: #CADCF4;
+	border: 2px solid #CADCF4;
+}
+
+nav table{
+	background-color: #689ADE;
+	width: 100%;
+	border-spacing: 0;
+	color: white;
+	font-size: 21px;
+}
+
+nav td{
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 15px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	letter-spacing: 4px;
+	transition: letter-spacing 0.3s ease;
+	font-size: 22px;
+}
+
+.header_title{
+	width: 70%;
+	font-size: 22px;
+	font-weight: bold;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.header_title button{
+	font-family: 'GmarketSansMedium', sans-serif;
+	padding: 5px;
+	border: none;
+	background-color: #689ADE;
+	color: white;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+.header_title button:hover{
+	background-color: #CADCF4;
+}
+
+.header_title button a{
+	text-decoration: none;
+	color: white;
+}
+
+.header_nav{
+	width: 70%;
+}
+
+.header_nav td a{
+	text-decoration: none;
+	color: #0047A9;
+}
+
+.header_nav table{
+	border-spacing: 0;
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 2px solid #689ADE;
+}
+
+.header_nav table td{
+	padding: 10px;
+	color: #0047A9;
+}
+
+#choice{
+	padding: 10px;
+	border: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #689ADE;
+	color: white;
+	outline: none;
+}
+
+#choice h3{
+	color: white;
+}
+
+.header_nav table td:hover{
+	background-color: #CADCF4;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	letter-spacing: 3px;
+	transition: letter-spacing 0.3s ease;
+}
+
+#keyword{
+	border:2px solid #689ADE;
+	padding: 10px;
+	width: 50%;
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin-bottom: 10px;
+}
+
+#searchbar{
+	border:2px solid #689ADE;
+	padding: 10px;
+	width: 50%;
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin-bottom: 10px;
+}
+
+input[type="button"] {
+    background-color: transparent;
+    background-image: url("images/search_icon.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+    vertical-align: middle;
+    margin-left: -10px;
+	margin-top: 10px;
+}
+
+form{
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	
+	select{
+		font-family: 'GmarketSansMedium', sans-serif;
+		border: 2px solid #689ADE;
+		border-radius: 2px;
+		padding: 9px;
+	}
+
+	form input[type="submit"] {
+		background-color: transparent;
+		background-image: url("images/search_icon.png");
+		background-repeat: no-repeat;
+		width: 40px;
+		height: 40px;
+		border: none;
+		cursor: pointer;
+		text-indent: -9999px;
+		vertical-align: middle;
+		margin-left: 3px;
+		margin-top: 10px;
+	}
+
+.table_wrap{
+	width: 70%;
+}
+
+.table_wrap table{
+	width: 100%;
+	text-align: center;
+}
+
+.table_wrap table{
+	background-color: white;
+	width: 100%;
+	border-spacing: 0;
+	border-bottom: 1px solid #689ADE;
+	border-top: 2px solid #689ADE;
+	border-left: 2px solid #689ADE;
+	border-right: 2px solid #689ADE;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.table_wrap table th{
+	padding: 10px;
+	border-bottom: 1px solid #689ADE;
+}
+
+.table_wrap table td{
+	padding: 10px;
+	border-bottom: 1px solid #689ADE;
+}
+
+.table_wrap td a{
+	text-decoration: none;
+	color: black;
+}
+
+.table_wrap td a:hover{
+	color: #CADCF4;
+}
+
+.table_wrap td button{
+	font-family: 'GmarketSansMedium', sans-serif;
+	padding: 5px;
+	border: 1px solid #689ADE;
+	background-color: white;
+	color: #689ADE;
+	border-radius: 3px;
+	letter-spacing: 2px;
+}
+
+.table_wrap td button:hover{
+	cursor: pointer;
+	background-color: #CADCF4;
+	color: #0047A9;
+}
+
+.page a{
+	text-decoration: none;
+	color: black;
+}
+
+.page a:hover{
+	cursor: pointer;
+	color: #CADCF4;
+}
+

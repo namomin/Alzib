@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+
+}
+
+.wrap{
+	margin: 0;
+}
+
+.head_wrap{
+	width: 70%;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+#title{
+	font-size: 29px;
+	font-weight: bold;
+	color: #0047A9;
+}
+
+.border_wrap{
+	width: 70%;
+	
+}
+
+table{
+	text-align: center;
+	width:100%;
+	border-top: 2px solid #689ADE;
+	border-bottom: 1px solid #689ADE;
+	border-spacing: 0;
+}
+
+th{
+	border-bottom: 1px solid #689ADE;
+	padding: 12px;
+	color:#0047A9;
+}
+
+td{
+	padding: 25px;
+	border-bottom: 1px solid #689ADE;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#interview{
+	font-family: 'GmarketSansMedium', sans-serif;
+	border: 1px solid #689ADE;
+	background-color: white;
+	border-radius: 3px;
+	color: #0047A9;
+	margin: 5px 0px 5px 0px;
+	width: 164px;
+	height: 35px;
+	letter-spacing: 2px;
+}
+
+#interview:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+	color: white;
+}
+
+input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	border: none;
+	background-color: #689ADE;
+	border-radius: 3px;
+	color: white;
+	margin: 5px 0px 5px 0px;
+	width: 80px;
+	height: 35px;
+	letter-spacing: 2px;
+}
+
+input[type="button"]:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+}

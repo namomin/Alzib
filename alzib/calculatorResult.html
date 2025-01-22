@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calculatorResult</title>
+<link href="calculatorResult.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div>
+<div class="cal">
+<h2>계산 결과</h2>
+<form action="calculatorResult.jsp" method="post" onsubmit="return validateForm()">
+    <label for="hourlyRate">시급 :&nbsp;</label>
+    <input type="text" id="hourlyRate" name="hourlyRate">&nbsp;원<br><br>
+    <label for="weeklyHours">근무 시간 :&nbsp;</label>
+    <input type="text" id="weeklyHours" name="weeklyHours">&nbsp;시간<br><br>
+	<label for="weeklyHours">급여 총 금액 :&nbsp;</label>
+	<input type="text" id="weeklyHours" name="weeklyHours">&nbsp;입니다.
+	<p><font color="red">※시급 ✕ 근무 시간 = 급여 총 금액※</font></p>
+</form>
+</div>
+	<img src="images/calculator.png">
+</div>
+</body>
+</html>

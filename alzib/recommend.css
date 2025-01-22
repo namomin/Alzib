@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.head_wrap{
+	width: 70%;
+	background-color: #689ADE;
+}
+
+.head_title{
+	width:80%;
+	height: 220px;
+	padding-top: 65px;
+}
+
+#title{
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 3px #5475A2;
+	letter-spacing: 2px;
+}
+
+.head_title span{
+	font-size: 21px;
+}
+
+.question_wrap {
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+}
+
+.question {
+	padding: 55px 35px 35px 35px;
+	border-bottom: 1px solid #689ADE;
+	width: 66%;
+	text-align: center;
+}
+
+.q {
+	font-size: 21px;
+}
+
+.a{
+	font-size:21px;
+	color: #0047A9;
+}
+
+select{
+	width: 25%;
+	border:2px solid #689ADE;
+	border-radius: 2px;
+	font-family: 'GmarketSansMedium';
+	height: 40px;
+	padding: 3px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 2px rgba(33, 86, 158, 0.6);
+}
+
+.choice_two{
+	margin-top: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 50%;
+}
+
+.choice_two table{
+	text-align: center;
+	width: 60%;
+}
+
+.choice_two td{
+	text-align: center; /* 수평 가운데 정렬 */
+	vertical-align: middle; /* 수직 가운데 정렬 */
+}
+
+.choice {
+	margin-top: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.choice table{
+	text-align: center;
+	width: 60%;
+}
+
+.choice td {
+	text-align: center; /* 수평 가운데 정렬 */
+	vertical-align: middle; /* 수직 가운데 정렬 */
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+/* Style the custom radio button */
+td .custom-radio {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #689ADE;
+	position: relative;
+	margin: 15px;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* Style the inner circle of the custom radio button */
+.custom-radio::after {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-color: #689ADE;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+/* Show inner circle when radio button is checked */
+input[type="radio"]:checked + .custom-radio::after {
+	opacity: 1;
+}
+
+.bottom{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+.bottom input[type="submit"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	width: 200px;
+	height: auto;
+	padding: 30px;
+	border: none;
+	background-color: #689ADE;
+	border-radius: 2px;
+	color: white;
+	font-size: 21px;
+	letter-spacing: 3px;
+	box-shadow: 4px 4px 4px rgba(33, 86, 158, 0.4);
+}
+
+.bottom input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+	transition: 160px, color 0.3s, font-size 0.3s;
+	transition: letter-spacing 0.3s ease;
+	letter-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.head_title span{
+		font-size: 16px;
+	}
+
+	td .custom-radio{
+		width: 10px;
+		height: 10px;
+		margin: 5px;
+	}
+	.custom-radio::after{
+		width: 12px;
+		height: 12px;
+	}
+
+	.choice table{
+		text-align: center;
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px){
+	.head_title span{
+		font-size: 20px;
+	}
+
+	td .custom-radio{
+		width: 20px;
+		height: 20px;
+	}
+
+	.custom-radio::after{
+		width: 22px;
+		height: 22px;
+	}
+
+	.choice table{
+		text-align: center;
+		width: 100%;
+	}
+
+}
+

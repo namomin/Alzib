@@ -1,0 +1,247 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'GmarketSansMedium';
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.calendar {
+    text-align: center;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+	  height: 70px;
+    border: 1px solid #ccc;	  
+}
+
+.calendar th {
+    background-color: #CADCF4;
+}
+
+.calendar td {
+	cursor: pointer;
+	vertical-align: top;
+	text-align: left;
+}
+
+button#prevMonthBtn {
+	font-family: 'GmarketSansMedium';
+  font-size: 15px; /* 버튼의 글꼴 크기 */
+  padding: 8px 8px; /* 버튼의 안쪽 여백 */
+  background-color: #689ADE; /* 버튼의 배경색 */
+  color: #fff; /* 버튼의 텍스트 색상 */
+  border: none; /* 버튼의 테두리 없음 */
+  border-radius: 4px; /* 버튼의 테두리 모서리 둥글게 */
+  cursor: pointer;
+}
+
+button#prevMonthBtn:hover {
+  background-color: #ccc; /* 마우스 호버 시 버튼의 배경색 변경 */
+}
+
+#nextMonthBtn {
+	font-family: 'GmarketSansMedium';
+	font-size: 15px; /* 버튼의 글꼴 크기 */
+	padding: 8px 8px; /* 버튼의 안쪽 여백 */
+	background-color: #689ADE; /* 버튼의 배경색 */
+	color: #fff; /* 버튼의 텍스트 색상 */
+	border: none; /* 버튼의 테두리 없음 */
+	border-radius: 4px; /* 버튼의 테두리 모서리 둥글게 */
+	cursor: pointer;
+}
+
+button#prevMonthBtn:hover {
+  background-color: #ccc; /* 마우스 호버 시 버튼의 배경색 변경 */
+}
+
+#currentMonth {
+	margin: 30px;
+}
+
+button {
+	font-family: 'GmarketSansMedium';
+	font-size: 16px; /* 버튼의 글꼴 크기 */
+	padding: 10px; /* 버튼의 안쪽 여백 */
+	background-color: #689ADE; /* 버튼의 배경색 */
+	color: #fff; /* 버튼의 텍스트 색상 */
+	border: none; /* 버튼의 테두리 없음 */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+  background-color: #CADCF4; /* 마우스 호버 시 버튼의 배경색 변경 */
+}
+
+#button {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.calendar td {
+	cursor: pointer;
+	vertical-align: top;
+	text-align: left;
+	width: 100px; 
+	white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+}
+
+.form {
+	display: none;
+}
+
+#salaryInfo1 {
+	width: 95%;
+	margin: 0 auto
+	text-align: center;
+	
+}#salaryInfo2 {
+	text-align: left;
+}
+
+#eventForm, #bulkForm, #placeForm, #salaryInfo {
+}
+
+#placeForm1, #placeForm2{
+	margin-left: 37%;
+	margin-bottom: 10px;
+	margin-top: 3px;
+    text-align: left;
+    width: 460px;
+    padding: 10px;
+    border: 2px solid #689ADE;
+    box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+    padding-left: 20px;
+}
+
+
+#bulkForm {
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 3px;
+	width: 460px;
+	height: flex;
+	display: inline-grid;
+	padding: 10px;
+	border: 2px solid #689ADE;
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+	padding-left: 20px;
+}
+
+#salaryInfo {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 3px;
+	width: 460px;
+	height: flex;
+	display: inline-grid;
+	padding: 10px;
+	border: 2px solid #689ADE;
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+	padding-left: 20px;
+}
+
+input[type="text"], input[type="number"], select {
+	width: flex;
+	background-color: white;
+	padding: 8px;
+	font-size: 15px;
+	outline: none;
+	border: 2px solid #689ADE;
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+	vertical-align: middle;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+input[type="submit"] {
+    font-size: 20px;
+	background-color: white;
+    text-decoration: none;
+    color: #689ADE;
+    border: 2px solid #689ADE;
+    box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+    padding: 5px;
+    font-family: 'GmarketSansMedium';
+    display: block; /* 가운데 정렬을 위해 블록 레벨 요소로 변경 */
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+}
+
+h2, #bulkForm h2 {
+	display: block; /* 가운데 정렬을 위해 블록 레벨 요소로 변경 */
+	margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px; /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+}
+
+input[type="submit"]:hover {
+	color: #ccc;
+	font-family: 'GmarketSansMedium';
+	align-content: center;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px){
+	input[type="text"] {
+        width: 50px;
+    }
+
+	input[type="number"]{
+		width: 50px;
+	}
+	
+	#placeForm1{
+		height: auto;
+	}
+
+	#placeForm1, #placeForm2{
+		margin-left: 10%;
+	}
+}
+
+
+/*태블릿*/
+@media screen and (min-width: 769px) and (max-width: 959px) {
+    input[type="text"] {
+        width: 50px;
+    }
+
+	input[type="number"]{
+		width: 50px;
+	}
+
+	#placeForm1{
+		height: auto;
+	}
+
+	#placeForm1, #placeForm2{
+		margin-left: 23%;
+	}
+}

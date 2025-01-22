@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0;
+}
+
+span{
+	font-size: 19px;
+	font-weight: bold;
+	color: #0047A9;
+}
+
+.member_wrap{
+	background-color: #CADCF4;
+	width: 70%;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.member_wrap table{
+	width: 100%;
+}
+
+.member_wrap input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: white;
+	border: 1px solid #689ADE;
+	color: #689ADE;
+	border-radius: 5px;
+	padding: 2px 5px 2px 5px;
+	margin-left: 5px;
+}
+
+.member_wrap input[type="button"]:hover{
+	cursor: pointer;
+}
+
+#profile{
+	text-align: center;
+}
+
+#profile img{
+	width: 50px;
+	height: auto;
+}
+
+.bord_wrap{
+	width: 70%;
+	padding-top: 25px;
+	padding-bottom: 200px;
+}
+
+
+.resume_head{
+	padding: 20px 20px 15px 5%;
+}
+
+.resume_head input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: #689ADE;
+	border: none;
+	border-radius: 5px;
+	width: 55px;
+	padding: 7px;
+	margin-left: 15px;
+	color: white;
+	font-size: 15px;
+}
+
+.resume_head input[type="button"]:hover{
+	background-color: #5475A2;
+	cursor: pointer;
+}
+
+.resume_table table{
+	width: 90%;
+	text-align: center;
+	border-top: 2px solid #689ADE;
+	border-bottom: 1px solid #689ADE;
+	border-spacing: 0;
+	background-color: white;
+}
+
+.resume_table th{
+	border-bottom: 1px solid #689ADE;
+	padding: 15px;
+	color: #0047A9;
+	letter-spacing: 3px;
+}
+
+.resume_table td{
+	border-bottom: 1px solid #689ADE;
+	padding: 40px;
+}
+
+.resume_table a{
+	text-decoration: none;
+	color: black;
+}
+
+.resume_table a:hover{
+	text-decoration: underline;
+}
+
+.resume_table input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: white;
+	border: 1px solid #689ADE;
+	color: #689ADE;
+	border-radius: 3px;
+	padding: 7px 12px 7px 12px;
+	letter-spacing: 3px;
+}
+
+.resume_table input[type="button"]:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+	color: white;
+	border: 1px solid #5475A2;
+}
+
+#interview input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	cursor: pointer;
+	background-color: #689ADE;
+	color: white;
+	width: 70px;
+	height: 35px;
+	margin: 5px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+#interview input[type="button"]:hover{
+	background-color: #5475A2;
+}
+
+.employe_wrap{
+	margin-top: 35px;
+	width: 100%;
+}
+
+.employe_head{
+	padding: 30px 0px 15px 5%;
+}
+
+.employe_table table{
+	width: 90%;
+	text-align: center;
+	border-top: 2px solid #689ADE;
+	border-bottom: 1px solid #689ADE;
+	border-spacing: 0;
+	background-color: #ECF4FF;
+}
+
+.employe_table th{
+	border-bottom: 1px solid #689ADE;
+	padding: 15px;
+	color: #0047A9;
+	letter-spacing: 2px;
+}
+
+.employe_table td{
+	border-bottom: 1px solid #689ADE;
+	padding: 30px;
+}
+
+.employe_table a{
+	color: black;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.employe_table a:hover{
+	text-decoration: underline;
+}
+
+.employe_table input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: white;
+	border: 1px solid #689ADE;
+	color: #689ADE;
+	border-radius: 3px;
+	padding: 5px 8px 5px 8px;
+	letter-spacing: 2px;
+	margin-bottom: 8px; 
+}
+
+.employe_table input[type="button"]:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+	color: white;
+	border: 1px solid #5475A2;
+}

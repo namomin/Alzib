@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 100px auto;	
+}
+
+.main_wrap{
+	text-align: center;
+}
+
+h2{
+	color: #083A7E;
+}
+
+.head_wrap{
+	text-align: center;
+	background-color: white;
+	width: 60%;
+	margin-top: 30px;
+}
+
+.head_wrap table{
+	width:100%;
+}
+
+input[type="text"]{
+	background-color: white;
+	margin: 10px;
+	padding: 5px;
+	font-size: 15px;
+	outline: none;
+	border: 1px solid #5475A2;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	vertical-align: middle;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+input[type="button"]{
+	background-color: transparent;
+	background-image: url('images/search_icon.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999px; /* 텍스트를 화면 밖으로 숨김 */
+	vertical-align: middle;
+	margin-left: -10px;
+}
+
+.table_wrap{
+	text-align: center;
+	background-color: white;
+	width: 60%;
+}
+
+.table_wrap table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table_wrap table th{
+	background-color: white;
+	text-align: center;
+	padding: 5px;
+	border-bottom: 2px solid #689ADE;
+	border-top: 2px solid #689ADE;
+}
+
+.table_wrap table th a{
+	text-decoration: none;
+	color: black;
+    display: block;
+    padding: 5px;
+    margin: 5px 0;
+    transition: color 0.3s, font-size 0.3s;
+	transition: letter-spacing 0.3s ease;
+}
+
+.table_wrap table th a:hover{
+	color: #0E448F;
+	font-size: 110%;
+	letter-spacing: 2px;
+}
+
+.detailview{
+	padding:15px;
+	border-bottom: 1px solid #689ADE;
+	border-collapse: collapse;
+}
+
+.detailview table{
+	text-align: left;
+}
+
+.detailview td{
+	padding: 5px 0px 5px 20px;
+}
+
+.detailview a{
+	color: black;
+	text-decoration: none;
+}
+
+.detailview a:hover{
+	color: #5475A2;
+}
+
+#title{
+}
+
+#si{
+	padding-top: 5px;
+}

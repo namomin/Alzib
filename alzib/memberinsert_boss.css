@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	color: #689ADE;
+}
+
+form{
+	font-size: 18px;
+}
+
+h1{
+	color: #689ADE;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 50px auto;	
+}
+
+.board{
+	width: 500px;
+	padding:30px 0px 30px 0px;
+}
+
+.head{
+	margin: 30px;
+}
+
+input[type="button"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: #689ADE;
+	border:1px solid #689ADE;
+	color: white;	
+	width:70px;
+	height: 25px;
+	cursor: pointer;
+}
+
+input[type="text"]{
+	border: 2px solid #689ADE;
+	height: 40px;
+	padding: 10px;
+}
+
+input[type="password"]{
+	border: 2px solid #689ADE;
+	height: 40px;
+	padding: 10px;
+}
+
+td p input{
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+}
+
+
+p{
+	margin: 10px 0px 25px 0px;
+}
+
+
+input[type="submit"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: #689ADE;
+	color: white;
+	width: 100px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: bold;	
+	font-size: 17px;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+}
+
+#backbutton{
+	font-family: 'GmarketSansMedium', sans-serif;
+	background-color: white;
+	color: #689ADE;
+	border:1px solid #689ADE;
+	width: 100px;
+	height: 45px;
+	padding: 10px;
+	margin-left: 10px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: bold;	
+	font-size: 17px;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.5);
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시급 계산기</title>
+<script>
+        function validateForm() {
+            var hourlyRate = document.getElementById("hourlyRate").value;
+            var weeklyHours = document.getElementById("weeklyHours").value;
+
+            // 시급이 숫자가 아니거나 9860 미만인 경우
+            if (isNaN(hourlyRate) || hourlyRate < 9860) {
+                alert("시급은 숫자이며 9860 이상이어야 합니다.");
+                return false;
+            }
+
+            // 주당 근무시간이 숫자가 아닌 경우
+            if (isNaN(weeklyHours)) {
+                alert("주당 근무시간은 숫자이어야 합니다.");
+                return false;
+            }
+
+            // 모든 조건이 충족되면 true 반환하여 폼 submit
+            return true;
+        }
+    </script>
+<link href="calculator.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div>
+<div class="cal">
+<h2>시급 계산기</h2>
+<form action="calculatorResult.jsp" method="post" onsubmit="return validateForm()">
+    <label for="hourlyRate">시급 :&nbsp;</label>
+    <input type="text" id="hourlyRate" name="hourlyRate">&nbsp;원
+	<p><font color="red">※2024년 기준 최저 시급은 9860원입니다.※</font></p>
+    <label for="weeklyHours">근무 시간 :&nbsp;</label>
+    <input type="text" id="weeklyHours" name="weeklyHours">&nbsp;시간<br><br>
+    <input type="submit" value="계산">
+</form>
+</div>
+	<img src="images/calculator.png">
+</div>
+	
+<script>
+    // 시급 입력 필드에 기본값 설정
+    document.getElementById("hourlyRate").defaultValue = "9860";
+</script>
+</body>
+</html>

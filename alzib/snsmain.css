@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.popular_wrap1{
+	background-color: #CADCF4;
+	width: 70%;
+}
+
+.popular_wrap{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.popular_head{
+	padding: 20px 0px 10px 15px;
+	font-size: 21px;
+	font-weight: bold;
+	color: #0047A9;
+}
+
+.popular_head span{
+	margin-left: 32px;
+}
+
+.popular_body{
+	height: auto;
+}
+
+.popular{
+	display: flex;
+	justify-content: center;
+}
+
+.popular table{
+	border: 3px solid #5475A2;
+	border-radius: 2px;
+	background-color: white;
+	width: 350px;
+	height: 100%;
+	padding: 5px 5px 0px 5px;
+	box-shadow: 3px 3px 3px rgba(33, 86, 158, 0.3);
+}
+
+.popular td{
+	max-height: 200px;
+	padding: 7px;
+	border: none;
+	color:#0047A9;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.im{
+	border:1px solid #689ADE;
+	width: 35%;
+}
+
+.contents{
+	width:70%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.left_wrap .right_wrap{
+	margin: 0px;
+}
+
+.left_wrap{
+	width: 65%;
+	padding-bottom: 200px;
+}
+
+.category{
+	
+}
+
+.category table{
+	width:100%;
+	text-align: center;
+	display: inline-block;
+	border-spacing: 0;
+	border-bottom: 2px solid #689ADE;
+}
+
+.category td{
+	padding: 10px;
+	font-size: 18px;
+}
+
+.category td a{
+	text-decoration: none;
+	color: #0047A9;
+	transition: color 0.3s, font-size 0.3s;
+	transition: letter-spacing 0.3s ease;
+}
+
+.category td a:hover{
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #689ADE;
+	color: white;
+	outline: none;
+	letter-spacing: 3px;
+}
+
+#present_category{
+	padding: 10px;
+	border: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #689ADE;
+	color: white;
+	outline: none;
+}
+
+.content{
+	border-bottom: 1px solid #689ADE;
+}
+
+.content table{
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 1px solid #689ADE;
+}
+
+.content td{
+	padding: 12px;
+	border: none;
+}
+
+.page{
+	padding-top: 15px;
+	text-align: center;
+}
+
+.page span{
+	font-size: 17px;
+	
+}
+
+#present{
+	color:#0047A9;
+	font-weight:bold;
+}
+
+#pagenumber a:hover{
+	color: #CADCF4;
+}
+
+.right_wrap{
+	width:25%;
+	text-align: center;
+}
+
+.search{
+	text-align: right;
+	width: 90%;
+}
+
+#search_bar{
+	border:2px solid #689ADE;
+	padding: 7px;
+	width: 85%;
+	height: 40px;
+	border-radius: 5px;
+	font-family: 'GmarketSansMedium', sans-serif;
+}
+
+#search_button{
+	background-color: transparent;
+	background-image: url('images/search_icon.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999px; /* 텍스트를 화면 밖으로 숨김 */
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.write{
+}
+
+#write_button{
+	font-family: 'GmarketSansMedium', sans-serif;
+	font-size: 20px;
+	color: white;
+	width: 89%;
+	margin-top: 30px;
+	padding: 15px 10px 15px 10px;
+	background-color: #689ADE;
+	cursor: pointer;
+	border: 2px solid #5475A2;
+	border-radius: 3px;
+	transition: background-color 0.2s;
+}
+
+#write_button:hover{
+	cursor: pointer;
+	background-color: #5475A2;
+}
+
+.my{
+	background-color:#CADCF4;
+	border-radius: 5px;
+	margin-top: 35px;
+	padding: 15px;
+	width: 80%;
+	height: auto;
+}
+
+.member{
+	text-align: left;
+	widht: 100%;
+	margin: 15px;
+}
+
+.activity{
+	width:100%;
+	padding: 0;
+}
+
+.activity ul{
+	background-color: white;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	width: 100%;
+	list-style-type: none;
+}
+
+.activity li{
+	margin-top: 5px;
+	border-bottom: 2px solid #689ADE;
+	padding: 3px;
+	height: 50px;
+}
+
+.activity li a{
+	text-decoration: none;
+	color: black;
+    display: block;
+    transition: color 0.3s, font-size 0.3s;
+	transition: letter-spacing 0.3s ease;
+	margin:auto;
+	padding: 10px;
+}
+
+.activity li a:hover{
+	color: #689ADE;
+	letter-spacing: 3px;
+	border-radius: 5px;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px){
+	.popular table{
+		width: 200px;
+	}
+}
+
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 959px){
+	.popular table{
+		width: 200px;
+	}
+}
+
+
+

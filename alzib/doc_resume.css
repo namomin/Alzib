@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+	/*background-color: #F0F4F9;*/
+}
+
+td a{
+	text-decoration: none;
+	color: #0047A9;
+}
+
+td a:hover{
+	color: white;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.border_wrap{
+	width: 70%;
+	margin-top: 50px;
+}
+
+#choice{
+	background-color: #689ADE;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	letter-spacing: 3px;
+	transition: letter-spacing 0.3s ease;
+}
+
+#choice h3{
+	color: white;
+}
+
+.heder_wrap{
+	width: 100%;
+	border-bottom: 2px solid #689ADE;
+	
+}
+
+.heder_wrap table{
+	border-spacing: 0;
+	/*display: inline-block;*/
+}
+
+.heder_wrap table td{
+	padding: 10px;
+	color: #0047A9;
+}
+
+.heder_wrap table td:hover{
+	background-color: #CADCF4;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	letter-spacing: 3px;
+	transition: letter-spacing 0.3s ease;
+}
+
+.border_wrap{
+}
+
+.doc{
+	background-color: #F0F4F9;
+	width: 100%;
+	text-align: center;
+	padding: 70px 0px 150px 0px;
+}
+
+.paper{
+	text_align: center;
+}
+
+.paper a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid #689ADE;
+	border-radius: 7px;
+	background-color: #689ADE;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.paper a:hover{
+	color: #CADCF4;
+}
+
+img{
+	border: 1px solid #C3C3C3;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+

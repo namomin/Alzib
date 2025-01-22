@@ -1,0 +1,68 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'GmarketSansMedium';
+	background: #f1f1f1;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+div {
+	background: white;
+	padding: 20px;
+	border-radius: 25px;
+	text-align: center;
+	width: 500px;
+	height: 700px;
+	border: 6px solid #689ADE;
+	margin: 0 auto;
+}
+
+.cal {
+	background: white;
+	border-radius: 25px;
+	text-align: center;
+	width: 400px;
+	height: 280px;
+	border: 6px solid #689ADE;
+}
+
+input[type="text"] {
+	font-family: 'GmarketSansMedium';
+	border: 2px solid #689ADE;
+	height: 30px;
+	box-shadow: 2px 2px 2px rgba(33, 86, 158, 0.5);
+}
+
+input[type="submit"] {
+	font-family: 'GmarketSansMedium';
+	background-color: #689ADE;
+	color: white;
+	width: 70px;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: bold;	
+	font-size: 19px;
+	box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+}
+
+input[type="submit"]:hover {
+	background-color: #CADCF4;
+}
+
+img {
+	right: 5000px;
+}

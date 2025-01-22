@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body{
+	font-family: 'GmarketSansMedium', sans-serif;
+	margin: 0;
+	background-color: #F0F4F9;
+}
+
+.wrap{
+	margin: 0;
+}
+
+.border_wrap{
+	width: 500px;
+	margin-top: 50px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_wrap{
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+	background-color: #f5f5f5;
+	text-align: center;
+}
+
+.header_wrap table{
+	border-spacing: 0;
+	width: 100%;
+}
+
+#name{
+	padding-right:48px;
+}
+
+#back{
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	color: #0047A9;
+}
+
+#back a{
+	text-decoration: none;
+	color: #0047A9;
+}
+
+#back a:hover{
+	color: #CADCF4;
+}
+
+.date{
+	width: 30%;
+	text-align: center;
+	font-size: 12px;
+	color: #5475A2;
+	background-color: #E8EEF7;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+}
+
+.chat{
+	overflow-y: auto;
+	height: 600px;
+	padding: 20px;
+}
+
+.chat::-webkit-scrollbar{
+	display: none;
+}
+
+.chat table{
+	width: 100%;
+	margin: 0;
+}
+
+.chat td{
+	width: 100%;
+	padding: 20px 5px 20px 5px;
+}
+
+table{
+	border-spacing: 0;
+}
+
+.chat_wrap{
+}
+
+.left{
+	left: 0;
+	text-align: left;
+	width: 45%;
+	background-color: #CADCF4;
+	padding: 7px;
+	margin: 20px 50% 0px 0px;
+	border-radius: 5px;
+}
+
+.right{
+	right:0;
+	text-align: left;
+	width: 45%;
+	background-color: #689ADE;
+	color: white;
+	padding: 7px;
+	margin: 20px 0px 0px 50%;
+	border-radius: 5px;
+}
+
+#left_time{
+	color: gray;
+	font-size: 12px;
+	text-align: left;
+}
+
+#right_time{
+	color: gray;
+	font-size: 12px;
+	text-align: right;
+}
+
+.send table{
+	width: 100%;
+	background-color: #f5f5f5;
+	height: 80px;
+}
+
+.send td{
+	padding: 10px;
+	
+}
+
+.send input[type="text"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+.send input[type="submit"]{
+	font-family: 'GmarketSansMedium', sans-serif;
+	padding: 10px 12px 10px 12px;
+	letter-spacing: 3px;
+	width: 90%;
+	border: 1px solid #689ADE;
+	border-radius: 2px;
+	background-color: #689ADE;
+	color: white;
+	cursor: pointer;
+}
+
+#send{
+	text-align: right;
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<head>
+<meta charset="euc-kr">
+<title>사장님 로그인</title>
+<style>
+		@font-face {
+		font-family: 'GmarketSansMedium';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		}
+
+        body {
+            font-family: 'GmarketSansMedium', sans-serif;
+            background: #f1f1f1;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="password"] {
+            border: 2px solid #689ADE;
+			height: 20px;
+			padding: 10px;
+			box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+			width: 60%;
+        }
+
+        .checkbox-container {
+            text-align: left;
+            margin-bottom: 7px;
+            margin-top: 3px;
+            margin-left: 20px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+			font-family: 'GmarketSansMedium', sans-serif;
+            background-color: #689ADE;
+			color: white;
+			width: 158px;
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+			display: inline-block;
+			margin-top: 10px;
+			font-weight: bold;	
+			font-size: 19px;
+			box-shadow: 5px 5px 5px rgba(33, 86, 158, 0.5);
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #CADCF4;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+	
+	em:hover {
+    	text-decoration: underline;			
+		}
+</style>
+</head>
+<body onLoad="login_focus()">
+    <form name="managerlogin" method="post" action="Manager_LoginOk.jsp">
+	<br>
+        <h1><a href="index.html">알ZIB</a></h1>
+        <p>관리자 로그인</p>
+	  <input type="text" name="MId" placeholder="아이디">
+        <br><br>
+      <input type="password" name="MPW" placeholder="비밀번호" onkeydown="onEnterSubmit()">
+        <br><br>
+        <input type="submit" value="로그인">&nbsp;
+        <input type="reset" value="취소">
+		<br><br>
+    </form>
+</body>
+</html>
